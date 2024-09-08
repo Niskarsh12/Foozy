@@ -5,6 +5,7 @@ import { repositoryName } from "@/prismicio";
 
 import "./app.css";
 import Header from './components/Header';
+import ViewCanvas from './components/ViewCanvas';
 
 
 // Font files can be colocated inside of `app`
@@ -28,6 +29,7 @@ export default function RootLayout({
       <Header/>
        <main>
         {children}
+        <ViewCanvas/>
        </main> 
         </body>
       <PrismicPreview repositoryName={repositoryName} />
